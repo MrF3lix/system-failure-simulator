@@ -1,6 +1,8 @@
+import SimulationWorker from '../worker/simulate?worker'
+
 export const computeResult = async (settings, nodes, setSuccessRates) => {
     try {
-        const worker = new Worker("../worker/simulate.js");
+        const worker = new SimulationWorker();
         console.time('Calc')
         worker.postMessage({
                 nodes: nodes,
