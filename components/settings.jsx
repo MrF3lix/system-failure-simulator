@@ -36,7 +36,7 @@ export const Settings = ({ settings, setSettings }) => {
             <h1 className="text-xl">System Failure Simulator</h1>
             <p className="text-sm text-gray-500">Add / Remove Nodes to represent your conditional system and set the conditional probabilities.</p>
 
-            <div className="flex gap-4 w-full">
+            <div className="flex flex-col sm:flex-row gap-4 w-full">
                 <div className="flex-1">
                     <h2>Settings</h2>
                     <div className="flex flex-row gap-2 items-start">
